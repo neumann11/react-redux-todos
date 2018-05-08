@@ -14,7 +14,7 @@ export default class NewTodoForm extends Component {
     e.preventDefault();
     this.props.handleSubmit(this.state.task);
     e.target.reset();
-    this.props.history.push("/todos");
+    this.props.history.push("/todos");//comes from {...props} in TodoList
   }
 
   handleChange(e){

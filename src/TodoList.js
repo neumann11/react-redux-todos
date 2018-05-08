@@ -32,7 +32,7 @@ class TodoList extends Component {
         <Route
           path="/todos/new"
           component={props => (
-          <NewTodoForm {...props} handleSubmit={this.handleAdd} />
+          <NewTodoForm {...props} handleSubmit={this.handleAdd} /> //{...props} are passed to NewTodoForm
           )}
         />
         <Route exact path="/todos" component={() => <div>{todos}</div>} />
